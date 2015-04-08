@@ -3,15 +3,15 @@ source 'https://rubygems.org'
 ruby '2.2.1'
 
 gem 'sinatra'
-gem 'rubocop-rspec'
-gem 'cucumber'
-gem 'rubocop'
-gem 'capybara'
-# gem 'byebug'
-gem 'cucumber-sinatra'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
 
-group :test do
+group :test, :development do
   gem 'rspec'
+  gem 'database_cleaner'
+  gem 'rubocop-rspec'
+  gem 'cucumber'
+  gem 'rubocop'
+  gem 'capybara'
+  gem 'cucumber-sinatra'
 end
