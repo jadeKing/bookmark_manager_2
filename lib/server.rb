@@ -9,10 +9,11 @@ require './lib/link'
 
 DataMapper.finalize
 DataMapper.auto_upgrade!
-
+# hkjh k
 class BookmarkManager < Sinatra::Base
   get '/' do
-    'Hello BookmarkManager!'
+    @links = Link.all
+    erb :index
   end
 
   # start the server if ruby file executed directly
