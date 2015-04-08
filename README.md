@@ -1,2 +1,2 @@
 ### Bookmark Manager ####
-An exercise in merging Ruby, RSPec, etc. with databases.
+An exercise in merging Ruby, RSpec, Sinatra, etc. with databases.
