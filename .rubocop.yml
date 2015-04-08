@@ -41,7 +41,6 @@ Style/TrailingBlankLines:
   - final_newline
   - final_blank_line
 
-
 Style/RedundantSelf:
   Description: Don't use self where it's not needed.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-self-unless-required

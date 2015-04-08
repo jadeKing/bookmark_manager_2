@@ -3,6 +3,8 @@ ENV['RACK_ENV'] = 'test'
 require 'server'
 require 'database_cleaner'
 require 'capybara/rspec'
+require 'coveralls'
+require 'simplecov'
 
 Capybara.app = BookmarkManager
 
@@ -63,3 +65,9 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 end
+
+SimpleCov.formatters = [
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+Coveralls.wear!
