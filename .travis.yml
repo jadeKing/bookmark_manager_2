@@ -1,4 +1,13 @@
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install postgresql postgresql-server-dev-9.3 libpq-dev
+before_script:
+  - psql -c 'create database bookmark_manager_test;' -U postgres
+  - psql -c 'create database bookmark_manager_development;' -U postgres
+language: ruby
 rvm: '2.2.1'
-script: 
+script:
   - bundle exec rspec spec
   - bundle exec cucumber
+addons:
+  postgresql: "9.3"
