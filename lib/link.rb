@@ -1,3 +1,4 @@
+require 'tilt/erb'
 # kg kuygtku
 class Link
   include DataMapper::Resource
