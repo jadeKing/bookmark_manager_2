@@ -4,6 +4,7 @@ ruby '2.2.1'
 
 gem 'sinatra'
 gem 'bcrypt-ruby'
+gem 'rack-flash3'
 
 group :test, :development do
   gem 'rspec'
